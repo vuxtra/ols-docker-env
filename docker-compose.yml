@@ -15,7 +15,7 @@ services:
     networks:
       - dokploy-network
   litespeed:
-    image: litespeedtech/openlitespeed:${OLS_VERSION}-${PHP_VERSION}
+    image: ghcr.io/ndigitals/openlitespeed:${OLS_VERSION}-${PHP_VERSION}
     container_name: litespeed
     env_file:
       - .env
